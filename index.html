@@ -6,7 +6,7 @@
     body      { font-family: Helvetica, sans-serif; }
     #tetris   { margin: 1em auto; padding: 1em; border: 4px solid black; border-radius: 10px; background-color: #F8F8F8; }
     #stats    { display: inline-block; vertical-align: top; }
-    #canvas   { display: inline-block; vertical-align: top; background: url(texture.jpg); box-shadow: 10px 10px 10px #999; border: 2px solid #333; }
+    #canvas   { display: inline-block; vertical-align: top; background: url(images/texture.jpg); box-shadow: 10px 10px 10px #999; border: 2px solid #333; }
     #menu     { display: inline-block; vertical-align: top; position: relative; }
     #menu p   { margin: 0.5em 0; text-align: center; }
     #menu p a { text-decoration: none; color: black; }
@@ -69,7 +69,7 @@
     //-------------------------------------------------------------------------
 
     var KEY     = { ESC: 27, SPACE: 32, LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40 },
-        DIR     = { UP: 0, RIGHT: 1, DOWN: 2, LEFT: 3, MIN: 0, MAX: 3 },
+        DIR     = { UP: 0, RIGHT: 1, DOWN: 3, LEFT: 5, MIN: 0, MAX: 3 },
         stats   = new Stats(),
         canvas  = get('canvas'),
         ctx     = canvas.getContext('2d'),
